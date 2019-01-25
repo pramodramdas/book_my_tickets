@@ -1,0 +1,50 @@
+cinema_halls collection
+
+//start is starting seat number and end is ending seat number
+{
+    "cID" : "mO_Qgptc2",
+    "cName" : "INXOZ_CJ_ROAD",
+    "cLocation" : "mumbai",
+    "class" : [ 
+        {
+            "classType" : "silver",
+            "start" : 1,
+            "end" : 10
+        }, 
+        {
+            "classType" : "gold",
+            "start" : 11,
+            "end" : 20
+        }
+    ]
+}
+-------------------------------------------
+
+movies collection
+
+{
+    "movieId" : "111A",
+    "movieName" : "spiderman",
+    "language" : "english",
+    "genre" : "action",
+    "votes" : 80,
+    "year" : 2019,
+    "synopsis" : "Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko. He first appeared in the anthology comic book Amazing Fantasy #15 in the Silver Age of Comic Books"
+}
+--------------------------------------------
+
+loclangs collection
+
+{
+    "city" : [ 
+        "bangalore", 
+        "mysore", 
+        "mumbai", 
+        "delhi"
+    ],
+    "language" : [ 
+        "english", 
+        "kannada", 
+        "hindi"
+    ]
+}
