@@ -18,32 +18,32 @@ Data will be stored in two parts ie. movie info, cinema hall info etc in mongodb
 - Original ticket owner can view and withdraw ether balance(withdraw pattern).
 
 #### Home Page http://bookmytickets.herokuapp.com/home
-User can search movie by selecting location and language.
+User can search movie by selecting location and language.  
 ![Alt text](images/home.png?raw=true "home")  
 
-On click of movie navigates to movie info
+On click of movie navigates to movie info  
 ![Alt text](images/movie_info.png?raw=true "movie info")  
 
-On select of Booking, navigates to show booking. select date(end date)
+On select of Booking, navigates to show booking. select date(end date)  
 ##### Note: select date after MAY 3 2019, as shows are configured on may 1,2,3
 ![Alt text](images/book.png?raw=true "booking")  
 
-On click of show, navigates to seat selection
+On click of show, navigates to seat selection  
 ##### Note: one ticket can be selected at a time, this is because of solidity don't take array as parameter at the time of contract development.
 ![Alt text](images/seat.png?raw=true "seating")  
-Select seat and pay ethers to confirm.
+Select seat and pay ethers to confirm.  
 ##### Note: you have to pay exact price else contract will fail.
 
 #### Profile Page http://bookmytickets.herokuapp.com/profile
 ![Alt text](images/profile.png?raw=true "profile")  
 
-you can also mark ticket for resale, ticket will be just marked for resale. when other users search for resale tickets, your ticket will be listed.
+you can also mark ticket for resale, ticket will be just marked for resale. when other users search for resale tickets, your ticket will be listed.  
 
 #### Resale Page http://bookmytickets.herokuapp.com/resale
 ##### Note: Use another account
-Search by selecting movie name, language and location
+Search by selecting movie name, language and location  
 ![Alt text](images/resale.png?raw=true "resale")  
-You can buy resale ticket by paying exact amount of ethers what owner paid.
+You can buy resale ticket by paying exact amount of ethers what owner paid.  
 
 Now owner can visit profile page and withdraw the ether by entering in text field.
 
