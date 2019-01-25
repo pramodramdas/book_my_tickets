@@ -8,7 +8,7 @@ This is movie ticket reservation system built on ethereum.
 ##### Note: Demo url to work you need to have metamask extension installed in your browser and to buy fake tickets you need to have fake ethers from rinkeby faceut.
 
 #### Summary
-Data will be stored in two parts ie. movie info, cinema hall info etc in mongodb and ticket info, resale info, show price, user balance etc in ethereum.
+Data will be stored in two parts ie. movie info, cinema hall info etc in mongodb and ticket info, resale info, show price, user balance etc in ethereum. mongodb collections which need to be created can be found in mongo.txt, other collections are created automatically.
 - Admin adds movies, cinema_halls, locations and languages to db(mongodb)
 - Admin adds shows and movie price to ethereum, which will be stored in db as well.
 - User can search movie, select show and buy ticket buy paying ticket price in ethers.
