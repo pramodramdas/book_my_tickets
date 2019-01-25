@@ -1,0 +1,44 @@
+[
+    {   
+        "$match":{"cLocation":""}
+    },
+    {
+        "$lookup":{
+            "from": "shows",
+            "let": { "startTime": "$startTime", "cID": "$cID" },
+            "pipeline": [
+                  { "$match":
+                     { "$expr":
+                        { 
+                            "$and":[{"$eq":["$cID", "$$cID"]}, {"$gte":["$startTime", 0]}]
+                        }
+                    }
+                  },
+                  { "$replaceRoot": { "newRoot": {"movieId":"$movieId"} } },
+                  { "$group": {"_id":"$movieId"}}
+            ],
+            "as": "movieswithshows"
+        }
+    },
+    { "$replaceRoot": { "newRoot": {"movieswithshows":"$movieswithshows"} } },
+    { "$unwind": "$movieswithshows" },
+    { "$group": {"_id": "$movieswithshows._id"}},
+    {
+        "$lookup":{
+            "from": "movies",
+            "let": { "movieId": "$_id" },
+            "pipeline": [
+                  { "$match":
+                     { "$expr":
+                        { 
+                            "$and":[{"$eq":["$movieId", "$$movieId"]}]
+                        }
+                    }
+                  }
+            ],
+            "as": "movies"
+        }
+    },
+    { "$unwind": "$movies"},
+    { "$replaceRoot": { "newRoot": "$movies" } }
+    ]

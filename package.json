@@ -1,0 +1,48 @@
+{
+  "name": "book_my_tickets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "antd": "^3.7.3",
+    "axios": "^0.18.0",
+    "bs58": "^4.0.1",
+    "cors": "^2.8.4",
+    "dotenv": "^2.0.0",
+    "ethereumjs-tx": "^1.3.7",
+    "express": "^4.16.3",
+    "ganache-cli": "^6.1.8",
+    "helmet": "^3.13.0",
+    "ipfs-api": "^22.3.0",
+    "jsonwebtoken": "^8.3.0",
+    "keccak": "^1.4.0",
+    "memory-cache": "^0.2.0",
+    "meta-auth": "^1.1.2",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.16",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.1",
+    "nodemon": "^1.18.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "shortid": "^2.2.12",
+    "truffle-hdwallet-provider": "0.0.6",
+    "web3": "^1.0.0-beta.35"
+  },
+  "scripts": {
+    "server-start": "nodemon --watch server.js --watch server_utils/**/*.js --watch database/**/*.js --watch server_controllers/**/*.js --watch routes/**/*.js --exec \"npm run server\"",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

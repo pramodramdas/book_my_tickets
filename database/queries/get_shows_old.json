@@ -1,0 +1,45 @@
+[
+    {
+        "$match": {"movieId":"111A", "startTime": {"$gte":0}}
+    },
+    {
+        "$group": {
+            "_id":"$cID",
+            "show_details":{
+                "$push":{
+                    "showId":"$showId", 
+                    "movieId":"$movieId",
+                    "startTime":"$startTime",
+                    "endTime":"$endTime",
+                    "price":"$price",
+                    "classType":"$class"
+                }
+            }
+        }
+    },
+    {
+        "$lookup": {
+            "from": "cinema_halls",
+            "let": { "id": "$_id" },
+            "pipeline": [
+                  { "$match":
+                     { "$expr":
+                        { 
+                            "$and":[{"$eq":["$$id", "$cID"]}]
+                        }
+                    }
+                  }
+            ],
+            "as":"cinema_hall"
+        }
+    },
+    {"$addFields":{"movieId": "111A"}},
+    {
+        "$lookup": {
+            "from": "movies",
+            "localField": "movieId",
+            "foreignField": "movieId",
+            "as":"movie_info"
+        }
+    }
+]

@@ -1,0 +1,46 @@
+set price
+
+spiderman pvr 153736421000 bangalore english bc1afe741ec1ca530b1ef93ec4f20356541b67050c8216c0ce4703fa021ab048
+
+silver 0.02 20000000000000000 f941acc7a280b509da22820f4cfa02d757f6c3c7f9a8aa70c32c18152fa9a488
+gold 0.03 30000000000000000 a827b848d338b362a9edc3f5d9143a504828207dd0d1d6515b2b3968154d59b0
+
+//ful movie info hash
+"0xbc1afe741ec1ca530b1ef93ec4f20356541b67050c8216c0ce4703fa021ab048","0xf941acc7a280b509da22820f4cfa02d757f6c3c7f9a8aa70c32c18152fa9a488",20000000000000000,1A
+
+//movie lang hash
+"0x1d5415ccf53eebb9e79eb2b1b900972a375b7293171394cd22622d9d57c0cdfb","0xf941acc7a280b509da22820f4cfa02d757f6c3c7f9a8aa70c32c18152fa9a488",20000000000000000,1A
+
+-----------------------------------------------------
+
+buy tickets
+
+bc1afe741ec1ca530b1ef93ec4f20356541b67050c8216c0ce4703fa021ab048
+spiderman
+english
+bangalore
+gold 
+1536757939347
+
+//full movie info hash as ticket hash
+"0xbc1afe741ec1ca530b1ef93ec4f20356541b67050c8216c0ce4703fa021ab048","spiderman","english","bangalore","silver",1536757939347
+---------------------
+
+searchResaleTickets
+
+spidermanenglish 1d5415ccf53eebb9e79eb2b1b900972a375b7293171394cd22622d9d57c0cdfb
+bangalore 255d1a231c648c63b7f7a7cef9d49702c14c2ba0b5a4c21174e03ba5ccc14c25
+"0x1d5415ccf53eebb9e79eb2b1b900972a375b7293171394cd22622d9d57c0cdfb","0x255d1a231c648c63b7f7a7cef9d49702c14c2ba0b5a4c21174e03ba5ccc14c25"
+------------------------
+
+"0x0f3e5be3980cb6b53e1a3342f17688b44a86698b01b5b4a175655bca42262325","0xf941acc7a280b509da22820f4cfa02d757f6c3c7f9a8aa70c32c18152fa9a488",20000000000000000
+
+"0x0f3e5be3980cb6b53e1a3342f17688b44a86698b01b5b4a175655bca42262325","spidermanpvr153736421000bangaloreenglish1A","spiderman","english","bangalore","silver",153736421000
+
+"0x6bf2685f5c1a7db2bcb459c86168518aee6b5f8c65b20f99cef2c0e3f8c00bc2"
+
+"0x1d5415ccf53eebb9e79eb2b1b900972a375b7293171394cd22622d9d57c0cdfb","0x255d1a231c648c63b7f7a7cef9d49702c14c2ba0b5a4c21174e03ba5ccc14c25",0
+
+-------------------------------------------------------------------------------------------------------
+//multiple
+"0x0f3e5be3980cb6b53e1a3342f17688b44a86698b01b5b4a175655bca42262325",["spidermanpvr153736421000bangaloreenglish1A","spidermanpvr153736421000bangaloreenglish1B"],"spiderman","english","bangalore","silver",153736421000
