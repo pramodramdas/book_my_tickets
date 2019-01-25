@@ -17,6 +17,12 @@ Data will be stored in two parts ie. movie info, cinema hall info etc in mongodb
 - User can buy resale ticket buy paying exact price amount payed by original ticket owner. ethers will be sent to contract, contract will add ethers to owner address.
 - Original ticket owner can view and withdraw ether balance(withdraw pattern).
 
+#### env config (replace env_sample to .env)
+- OWNER_ACCOUNT_PUBLIC = public key of contract owner
+- OWNER_ACCOUNT_PRIVATE = private key of contract owner
+- DB_URL = mongdb url
+
+
 #### Home Page http://bookmytickets.herokuapp.com/home
 User can search movie by selecting location and language.  
 ![Alt text](images/home.png?raw=true "home")  
